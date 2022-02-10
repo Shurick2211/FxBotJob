@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="768.0" prefWidth="1024.0">
+         <children>
+            <TextArea fx:id="messageIn" layoutX="14.0" layoutY="39.0" prefHeight="208.0" prefWidth="448.0" />
+            <ListView fx:id="list" layoutX="17.0" layoutY="320.0" onMouseClicked="#editList" prefHeight="416.0" prefWidth="448.0" />
+            <Button fx:id="Print" layoutX="707.0" layoutY="77.0" mnemonicParsing="false" onAction="#print" text="3. Получить объявление" />
+            <Button fx:id="Prev" layoutX="14.0" layoutY="282.0" mnemonicParsing="false" onAction="#prev" text="Назад" />
+            <Button fx:id="Up" layoutX="474.0" layoutY="427.0" mnemonicParsing="false" onAction="#up" text="Вверх" />
+            <Button fx:id="Dw" layoutX="477.0" layoutY="480.0" mnemonicParsing="false" onAction="#dw" text="Вниз" />
+            <Button fx:id="Next" layoutX="71.0" layoutY="282.0" mnemonicParsing="false" onAction="#next" text="Вперед" />
+            <Button fx:id="Edit" layoutX="378.0" layoutY="251.0" mnemonicParsing="false" onAction="#edit" text="2. Разделить" />
+
+            <Button fx:id="Dlt" layoutX="474.0" layoutY="330.0" mnemonicParsing="false" onAction="#dlt" text="Удалить" />
+            <TextArea fx:id="messageOut" layoutX="578.0" layoutY="112.0" prefHeight="317.0" prefWidth="423.0" />
+            <Button fx:id="Add" layoutX="587.0" layoutY="439.0" mnemonicParsing="false" onAction="#add" text="4. Добавить " />
+            <Button fx:id="Save" layoutX="882.0" layoutY="439.0" mnemonicParsing="false" onAction="#save" text="5. Сохранить Файл" />
+            <TextField fx:id="hash" layoutX="587.0" layoutY="40.0" prefHeight="25.0" prefWidth="413.0" />
+            <Label fx:id="File" layoutX="484.0" layoutY="40.0" prefHeight="25.0" prefWidth="57.0" text="File:" />
+            <Label fx:id="Msg" layoutX="202.0" layoutY="255.0" prefHeight="17.0" prefWidth="129.0" />
+            <Label layoutX="598.0" layoutY="18.0" prefHeight="17.0" prefWidth="247.0" text="Название професий и метро без # через пробел" />
+            <Label fx:id="MsgOut" layoutX="693.0" layoutY="443.0" prefHeight="17.0" prefWidth="166.0" />
+            <Label layoutX="20.0" layoutY="18.0" prefHeight="17.0" prefWidth="247.0" text="Разделитель &quot;=&quot;" />
+            <Label layoutX="13.0" layoutY="251.0" prefHeight="25.0" prefWidth="194.0" text="Пролистываем объявы в файле" />
+            <Button fx:id="GetMAS" layoutX="472.0" layoutY="100.0" mnemonicParsing="false" onAction="#opAr" text="1. Получить" />
+            <Button fx:id="Open" layoutX="476.0" layoutY="162.0" mnemonicParsing="false" onAction="#open" text="Открыть" />
+            <Label layoutX="484.0" layoutY="81.0" text="Бот:" />
+            <Label layoutX="485.0" layoutY="143.0" text="Файл:" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

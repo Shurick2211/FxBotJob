@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="FX docer">
+    <output-path>$PROJECT_DIR$/out/artifacts/FX_docer</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="" />
+        <option name="height" value="768" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+        <option name="width" value="1024" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="FX_docer.jar">
+        <element id="module-output" name="FX docer" />
+      </element>
+      <element id="library" level="project" name="org.telegram:telegrambots:4.4.0.1" />
+      <element id="library" level="project" name="lib" />
+    </root>
+  </artifact>
+</component>
